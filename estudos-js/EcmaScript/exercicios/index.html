@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> document.write("Olá mundo.")</script>
+
+    <div id="ola">
+    </div>
+
+    <div id="name">
+        <input id="input" type="text">
+        <button style="cursor: pointer;" onclick="showName()" >show name</button>
+        <button style="cursor: pointer;" onclick="charactersQtd()" >show qtd characters</button>
+
+        <p id="qtd-characters" ></p>
+    </div>
+
+    <div id="lamp">
+        <button style="cursor: pointer;" onclick="lampOnOff()" >turn on</button>
+        <br>
+        <img id="imageLamp" src="../assets/lamp-off.jpeg" alt="">
+    </div>
+        
+    <br>
+
+    <div id="lamp2">
+        <p>HOVER BEHAVIOR:</p>
+        <img
+        id="imageLamp2"
+        onmouseover="lampOn()"
+        onmouseout="lampOff()" 
+        id="image" 
+        src="../assets/lamp-off.jpeg" 
+        alt="">
+    </div>
+
+    <br>
+
+    <div class="saudacao">
+
+        <input id="first-name" type="text" placeholder="Name">
+        <input id="last-name" type="text" placeholder="Last Name">
+        <button style="cursor: pointer;" onclick="greating()" >greeting</button>
+
+    </div>
+
+    <div id="soma">
+        
+    </div>
+
+     <script src="index.js" ></script>
+</body>
+</html>

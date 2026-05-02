@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Estudos JavaScript</title>
+</head>
+<header>
+    <script type="text/javascript" src="app.js"></script>
+</header>
+<body>
+    <p class="font-weight-bold" >Esta linha está em html puro</p>
+    <script> document.write("Usando javaScript aqui!") </script>
+    <p class="font-weight-bold">Voltamos para o Html</p>
+
+    <div id="entryName">
+        Você entrou como: 
+    </div>
+
+    <button class="btn btn-primary" onclick="enterUsingExistingName()">Entrar com nome do alert</button>
+
+    <div id="area">
+        Bem-Vindo...
+    </div>
+
+    <button class="btn btn-success" onclick="entrar()">Entrar</button>
+    <button class="btn btn-success" onclick="entrarDinamicamente('entryName')">Entrar atualizando componente dinamicamente</button>
+
+    <button   onclick="window.location.href='index.html'">Refresh</button>
+    <button class="btn btn-link" onclick="window.location.href='https://ads.ifba.edu.br'">Redirect</button>
+
+    <div id="modificado">
+        Salve!
+    </div>
+
+    <button class="btn btn-secondary" onclick="modificarTexto('Luanzinho dos testes')">Modificar texto</button>
+    <button class="btn btn-secondary" onclick="modificarTextoDinamicamente('entryName')">Modificar texto dinamicamente de elemento</button>
+</body>
+</html>
